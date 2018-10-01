@@ -1,5 +1,5 @@
 {
-  "name": "scss",
+  "name": "blogenDB",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "db585 <jscriptor5@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {}
 }
