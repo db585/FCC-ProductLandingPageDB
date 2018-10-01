@@ -4,7 +4,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-  return gulp.src(['./scss/style.scss', './scss/bootstrap.scss'])
+  return gulp.src(['./scss/style.scss'])
+    // ,'./scss/bootstrap.scss'])
     .pipe(sass().on('error', sass.logError)) // Converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('./css'))
 });
@@ -15,7 +16,7 @@ gulp.task('sass', function () {
 // More often though, we'll want to watch more than one type of file at once. To do so, we can group together multiple watch processes into a watch task:
 
 gulp.task('watch', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./scss/**/*.scss', gulp.parallel('sass'));
   // Other watchers 
 });
 
