@@ -1,4 +1,4 @@
-#db-main-navbar {
+#nav-bar {
   background: #333;
   color: #fff;
   font-size: 1.6em;
@@ -29,7 +29,9 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-
+// Jump links and viewport positioning
+// http://nicolasgallagher.com/jump-links-and-viewport-positioning/
+// not the best way, cause it change layout but it works and it's fine
 #ride:before {
   content: "";
   display: block;

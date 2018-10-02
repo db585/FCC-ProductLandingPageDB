@@ -13,42 +13,43 @@
   <title>Alloy Bikes</title>
 </head>
 
-<body data-spy="scroll" data-target="#db-main-navbar" id="home">
+<body>
 
   <!-- NAVBAR -->
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4" id="db-main-navbar">
-    <div class="container">
-      <a href="#home" class="navbar-brand">
-        <span>
-          <i class="fas fa-bicycle fa-2x pr-1"></i>
-        </span>
-        <h3 class="d-inline align-content-end"> Alloy Bikes</h3>
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item px-2">
-            <a href="#home" class="nav-link">Know How</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="#ride" class="nav-link">Get Your Ride</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="#price" class="nav-link">Priceless</a>
-          </li>
-        </ul>
+  <header data-spy="scroll" data-target="#nav-bar" id="header">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4" id="nav-bar">
+      <div class="container">
+        <a href="#header" class="navbar-brand">
+          <span>
+            <i class="fas fa-bicycle fa-2x pr-1" id="header-img"></i>
+          </span>
+          <h3 class="d-inline align-content-end"> Alloy Bikes</h3>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2">
+              <a href="#header" class="nav-link">Know How</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#ride" class="nav-link">Get Your Ride</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#price" class="nav-link">Priceless</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
 
   <!--  KNOW HOW SECTION -->
 
-
-  <header id="db-know-how-section">
+  <section id="db-know-how-section">
     <div class="db-dark-overlay">
       <div class="db-know-how-inner container">
         <!-- Grid system start -->
@@ -90,7 +91,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
 
   <!-- NEWSLETTER SECTION-->
@@ -102,16 +103,27 @@
         <!-- py- top and bottom padding -->
         <div class="col-md-8 text-center mx-auto pt-4 pb-5">
           <h3 class="display-4 pb-2">Contact Us</h3>
-          <div class="form-group">
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text db-bg-orangered text-white">
-                  <i class="fas fa-envelope"></i>
-                </span>
+
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text db-bg-orangered text-white">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type="email" id="email" class="form-control bg-dark text-white" placeholder="Email">
+                </div>
               </div>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <div class="form-group col-md-4">
+                <input type="submit" id="submit" class="btn db-bg-orangered text-white btn-lg btn-block" value="Submit">
+              </div>
             </div>
-          </div>
+
+          </form>
+
         </div>
       </div>
     </div>
@@ -120,7 +132,6 @@
 
   <!-- GET YOUR RIDE SECTION -->
 
-  <!-- CREATE SECTION -->
   <section id="ride" class="py-5 bg-dark text-white">
     <div class="container">
       <!-- Grid start -->
@@ -130,7 +141,8 @@
         <div class="col-md-6 order-2 pt-5">
 
           <div class="embed-responsive embed-responsive-16by9 rounded">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iT9ZDULtjF0?rel=0" allowfullscreen></iframe>
+            <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/iT9ZDULtjF0?rel=0"
+              allowfullscreen></iframe>
           </div>
         </div>
         <!-- Right part -->
@@ -262,7 +274,7 @@
 
     // Init scrollspy
     $('body').scrollspy({
-      target: '#main-nav'
+      target: '#nav-bar'
     });
   </script>
 </body>
