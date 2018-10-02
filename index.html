@@ -9,12 +9,86 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <title>Carbonicle bikes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Alloy Bikes</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#db-main-navbar" id="home">
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4" id="db-main-navbar">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <span>
+          <i class="fas fa-bicycle fa-2x pr-1"></i>
+        </span>
+        <h3 class="d-inline align-content-end"> Alloy Bikes</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-2">
+            <a href="#home" class="nav-link">Now How</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="#ride" class="nav-link">Get a ride</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="#price" class="nav-link">Priceless</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
+  <!-- HOME SECTION -->
+  <header id="db-home-section">
+    <div class="db-dark-overlay">
+      <div class="db-home-inner container">
+        <!-- Grid system start -->
+        <div class="row">
+          <!-- Main header in schowcase -->
+          <div class="col-lg-10 d-none d-lg-block">
+            <h1 class="display-4"><strong>Magic</strong> out off our hands
+            </h1>
+            <!-- Flex start -->
+            <div class="d-flex">
+              <!-- icon block aligned left -->
+              <div class="p-4 align-items-start">
+                <i class="fab fa-gripfire fa-4x"></i>
+              </div>
+              <!--textblock aligned right  -->
+              <h4 class="p-4 align-self-end ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae,
+                suscipit? Nostrum cum sint nihil voluptate.
+              </h4>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-items-start">
+                <i class="fab fa-connectdevelop fa-4x"></i>
+              </div>
+              <h4 class="p-4 align-self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
+                suscipit? Nostrum cum sint nihil voluptate.
+              </h4>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-items-start">
+                <i class="fas fa-space-shuttle fa-5x"></i>
+              </div>
+              <h4 class="p-4 align-self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
+                suscipit? Nostrum cum sint nihil voluptate.
+              </h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
