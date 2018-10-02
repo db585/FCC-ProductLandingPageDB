@@ -3,12 +3,13 @@
   color: #fff;
   font-size: 1.6em; }
 
-.db-home-inner {
+.db-know-how-inner {
   position: relative;
   top: 150px; }
 
-#db-home-section {
+#db-know-how-section {
   background: url(../img/josh-nuttall-286507-unsplash.jpg);
+  background-position: 0 -100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,3 +23,23 @@
   width: 100%;
   min-height: 700px;
   background: rgba(0, 0, 0, 0.7); }
+
+#ride:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -50px 0 0; }
+
+.db-bg-orangered {
+  background: orangered; }
+
+@media (max-width: 768px) {
+  #db-know-how-section {
+    background-position: 0 -100px;
+    min-height: 1000px;
+    padding-bottom: 100px; }
+  .db-dark-overlay {
+    top: 0;
+    left: 0;
+    min-height: 1000px;
+    background: rgba(0, 0, 0, 0.7); } }
