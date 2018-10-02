@@ -10,14 +10,13 @@
 }
 
 #db-know-how-section {
-  background: url(../img/josh-nuttall-286507-unsplash.jpg);
+  background: url(https://www.dropbox.com/s/istn9mtacesa793/josh-nuttall-286507-unsplash.jpg?dl=1);
   background-position: 0 -100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 700px;
   color: orangered;
-
 }
 
 .db-dark-overlay {
@@ -27,6 +26,10 @@
   width: 100%;
   min-height: 700px;
   background: rgba(0, 0, 0, 0.7);
+}
+
+#db-newsletter-section {
+  display: flex;
 }
 
 // Jump links and viewport positioning

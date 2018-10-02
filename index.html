@@ -18,12 +18,14 @@
   <!-- NAVBAR -->
 
   <header data-spy="scroll" data-target="#nav-bar" id="header">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4" id="nav-bar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-2" id="nav-bar">
       <div class="container">
         <a href="#header" class="navbar-brand">
-          <span>
+          <img src="https://www.dropbox.com/s/wcwevjscegdqtu6/AlloyBikeBrand.png?dl=1" alt="brand-picture" id="header-img"
+            class="pr-3">
+          <!-- <span>
             <i class="fas fa-bicycle fa-2x pr-1" id="header-img"></i>
-          </span>
+          </span> -->
           <h3 class="d-inline align-content-end"> Alloy Bikes</h3>
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -104,7 +106,7 @@
         <div class="col-md-8 text-center mx-auto pt-4 pb-5">
           <h3 class="display-4 pb-2">Contact Us</h3>
 
-          <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
 
             <div class="form-row">
               <div class="form-group col-md-8">
@@ -114,7 +116,7 @@
                       <i class="fas fa-envelope"></i>
                     </span>
                   </div>
-                  <input type="email" id="email" class="form-control bg-dark text-white" placeholder="Email">
+                  <input type="email" id="email" name="email" class="form-control bg-dark text-white" placeholder="Email">
                 </div>
               </div>
               <div class="form-group col-md-4">
